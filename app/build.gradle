@@ -25,7 +25,7 @@ android {
 
         // WARNING: librs.compute.so not generated causing runtime error.
         // Change to 19 or 20 to make it work.
-        renderscriptTargetApi 19
+        renderscriptTargetApi 24
 
         renderscriptSupportModeEnabled true
         renderscriptNdkModeEnabled true
