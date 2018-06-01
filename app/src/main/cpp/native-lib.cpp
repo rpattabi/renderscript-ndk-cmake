@@ -4,7 +4,7 @@
 
 extern "C" JNIEXPORT
 jstring JNICALL
-Java_org_kuyil_lab_renderscript_MainActivity_stringFromJNI(
+Java_com_example_renderscript_MainActivity_stringFromJNI(
         JNIEnv *env,
         jobject /* this */,
         jstring appCacheDir

@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "org.kuyil.lab.renderscript"
+        applicationId "com.example.renderscript"
         minSdkVersion 19
         targetSdkVersion 27
         versionCode 1
@@ -25,7 +25,7 @@ android {
 
         // WARNING: librs.compute.so not generated causing runtime error.
         // Change to 19 or 20 to make it work.
-        renderscriptTargetApi 24
+        renderscriptTargetApi 19
 
         renderscriptSupportModeEnabled true
         renderscriptNdkModeEnabled true
