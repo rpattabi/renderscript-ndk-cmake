@@ -1,6 +1,7 @@
 #include "dsp.h"
 #include <RenderScript.h>
 #include <ScriptC_compute.h>
+#include <ScriptC_reduction.h>
 
 void Dsp::call_rs() {
     sp<RS> rs = new RS();
@@ -14,4 +15,7 @@ void Dsp::call_rs() {
     sp<Allocation> outAlloc = Allocation::createTyped(rs, t);
 
     script->forEach_relay(inAlloc, outAlloc);
+
+    ScriptC_reduction* script2 = new ScriptC_reduction(rs);
+//    script2->reduce_addfloat(outAlloc);
 }

@@ -13,11 +13,6 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        externalNativeBuild {
-            cmake {
-                cppFlags "-fexceptions"
-            }
-        }
 
         ndk {
             abiFilters 'armeabi-v7a', 'x86'
@@ -48,9 +43,12 @@ android {
         }
     }
     externalNativeBuild {
-        cmake {
-            path "CMakeLists.txt"
+        ndkBuild {
+            path "libs/rsKernels_jni/jni/Android.mk"
         }
+//        cmake {
+//            path "CMakeLists.txt"
+//        }
     }
 }
 
